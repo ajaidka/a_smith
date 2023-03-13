@@ -689,6 +689,7 @@
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 30,
                       "dynamicBindingPathList": [
@@ -697,6 +698,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -724,7 +728,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{CustomersTable.selectedRow.name}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -796,6 +800,7 @@
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 30,
                       "dynamicBindingPathList": [
@@ -804,6 +809,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -831,7 +839,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{CustomersTable.selectedRow.email}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1084,7 +1092,7 @@
               "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 34,
+              "originalBottomRow": 32,
               "minDynamicHeight": 10
             }
           ]
